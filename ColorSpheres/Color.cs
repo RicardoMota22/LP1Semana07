@@ -8,10 +8,10 @@ namespace ColorSpheres
     public class Color
     {
         //Store
-        private byte red;
-        private byte green;
-        private byte blue;
-        private byte alpha = 255;
+        private readonly byte red;
+        private readonly byte green;
+        private readonly byte blue;
+        private const byte alpha = 255;
 
         //Constructor
         public Color(byte red, byte green, byte blue, byte alpha)
@@ -19,14 +19,11 @@ namespace ColorSpheres
             this.red = red;
             this.green = green;
             this.blue = blue;
-            this.alpha = alpha;
+            
         }
 
         //cant make it 4 parametres
-        public Color()
-        {
-            alpha = 255;
-        }
+
         //Get methods
         public byte GetRed()
         {
