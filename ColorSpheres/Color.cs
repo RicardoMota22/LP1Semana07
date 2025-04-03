@@ -49,5 +49,6 @@ namespace ColorSpheres
             byte total = (byte)(red + green + blue);
             return (byte)(total/3);
         }
+        public override string ToString() => $"Color(Red: {red}, Green: {green}, Blue: {blue}, Alpha: {alpha})";
     }
 }

@@ -31,5 +31,7 @@ namespace ColorSpheres
         {
             return thrown++;
         }
+        public override string ToString() => $"Sphere({color}, Radius: {radius}, Times Thrown: {thrown})";
+        
     }
 }
