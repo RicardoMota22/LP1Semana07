@@ -23,7 +23,7 @@ namespace BetterColorSpheres
             Console.WriteLine(s1.Throw);
             Console.WriteLine(s2);
             Console.WriteLine(s1);
-            Console.WriteLine(s1.Pop);
+            Console.WriteLine(s1.Pop());
             Console.WriteLine(s1.Throw);
             Console.WriteLine(s1);
             
