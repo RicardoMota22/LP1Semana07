@@ -13,7 +13,7 @@ namespace MyRoguelike
 
         public Hero(string name)
         {
-            name = Name;
+            Name = name;
             xp = 0;
             Health = MaxHealth;
         }
@@ -27,10 +27,12 @@ namespace MyRoguelike
             }
             set
             {
-                if (XP <=xp)
+            
+                if (xp < 0)
                 {
-                    xp++;
-                } 
+                    xp = xp;
+                }
+            
             }
         }
         
@@ -54,7 +56,7 @@ namespace MyRoguelike
         {
             get
             {
-                return Health ;
+                return MaxHealth ;
             }
             set
             {
