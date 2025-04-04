@@ -8,10 +8,10 @@ namespace BetterColorSpheres
     public class Color
     {
         //Store
-        private readonly byte red;
-        private readonly byte green;
-        private readonly byte blue;
-        private const byte alpha = 255;
+        private  byte red {get;}
+        private  byte green{get;}
+        private  byte blue{get;}
+        private  byte alpha = 255;
 
         //Constructor
         public Color(byte red, byte green, byte blue, byte alpha)
@@ -25,34 +25,19 @@ namespace BetterColorSpheres
         //cant make it 4 parametres
 
         //Properties
-        public byte Red
-        {
+        public byte Red {get;}
+        /*{
             get
             {
                 return red;
             }
-        }
-        public byte Green
-        {
-            get
-            {
-                return green;
-            }
-        }
-        public byte Blue
-        {
-            get
-            {
-                return blue;
-            }
-        }
-        public byte Alpha
-        {
-            get
-            {
-                return alpha;
-            }
-        }
+        }*/
+        public byte Green {get;}
+        
+        public byte Blue {get;}
+        
+        public byte Alpha {get;}
+        
         public byte GetGrey
         {
             get

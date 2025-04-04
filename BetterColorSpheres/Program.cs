@@ -14,15 +14,18 @@ namespace BetterColorSpheres
             Sphere s2 = new Sphere(blue, 15,2);
             
 
-            s1.Throw();
-            s1.Throw();
-            s2.Throw();
-            s2.Throw();
-            s2.Pop();
+            
+            
             
 
             Console.WriteLine(s1);
+            Console.WriteLine(s1.Throw);
+            Console.WriteLine(s1.Throw);
             Console.WriteLine(s2);
+            Console.WriteLine(s1);
+            Console.WriteLine(s1.Pop);
+            Console.WriteLine(s1.Throw);
+            Console.WriteLine(s1);
             
             
         }

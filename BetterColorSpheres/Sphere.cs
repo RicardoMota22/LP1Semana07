@@ -8,8 +8,8 @@ namespace BetterColorSpheres
     public class Sphere
     {
         private readonly Color color; // field
-        private double radius;
-        private int thrown;
+        private double radius{get;set;}
+        private int thrown {get;set;}
         //Construtor
         public Sphere(Color color, double radius, int thrown)
         {
@@ -18,21 +18,19 @@ namespace BetterColorSpheres
             this.thrown = 0;
         }
         //Metodo Pop
-        public int Pop
-        {
-            set
-            {
-                radius = 0;
-            }
-        }
+        public int Pop => 0;
         
         //Metodo Throw
         public int Throw //Property
         {
+            get
+            {
+                return GetTimesThrown +1;
+            }
             set
             {
-            if (radius > 0)
-            thrown++;
+            if (radius == 0)
+                thrown = thrown;
             }
         }
 
