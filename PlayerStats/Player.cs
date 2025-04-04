@@ -12,6 +12,18 @@ namespace PlayerStats
 
         public int wonGames {get; private set;}
 
+        
+
+        public Player(string name)
+        {
+            Name = name;
+            highScore = 0;
+            playedGames = 0;
+            wonGames = 0;
+        }
+        
+
+
         public float HighScore
         {
             get
@@ -41,6 +53,18 @@ namespace PlayerStats
                 WinRate = 0;
             }
         }
+
+        public void PlayGame(bool win)
+        {
+            playedGames++;
+            if(win)
+            {
+                wonGames++;
+            }
+        }
+
+
+        
 
 
     }
